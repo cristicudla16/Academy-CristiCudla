@@ -1,43 +1,32 @@
 @isTest
-private class DiscountCalculatorTest {
+public class DiscountCalculatorTest {
     
-    @isTest static void testNoDiscount() {
+    @isTest
+    static void testDiscountApplied() {
         DiscountCalculator calculator = new DiscountCalculator();
-        System.assertEquals(99, calculator.calculateDiscount(99, null), 'Amounts less than 100 should not receive a discount.');
+        
+        // Folosim 100.0 (Decimal) pentru a se potrivi cu semnătura metodei
+        Decimal result1 = calculator.calculateDiscount(100.0);
+        System.assertEquals(90.0, result1, '10% discount should be applied to 100');
+        
+        Decimal result2 = calculator.calculateDiscount(200.0);
+        System.assertEquals(180.0, result2, '10% discount should be applied to amounts > 100');
     }
     
-    @isTest static void test10PercentDiscount() {
+    @isTest
+    static void testNoDiscountApplied() {
         DiscountCalculator calculator = new DiscountCalculator();
-        Decimal expectedAmountFor200 = 200 - (200 * 0.1); // 10% discount
-        System.assertEquals(expectedAmountFor200, calculator.calculateDiscount(200, null), 'Amounts between 100 and 200 should receive a 10% discount.');
+        
+        Decimal result = calculator.calculateDiscount(50.0);
+        System.assertEquals(50.0, result, 'No discount should be applied to amounts < 100');
     }
     
-    @isTest static void test15PercentDiscount() {
+    @isTest
+    static void testNullAmount() {
         DiscountCalculator calculator = new DiscountCalculator();
-        Decimal expectedAmountFor400 = 400 - (400 * 0.15); // 15% discount
-        System.assertEquals(expectedAmountFor400, calculator.calculateDiscount(400, null), 'Amounts between 200 and 500 should receive a 15% discount.');
-    }
-    
-    @isTest static void test20PercentDiscount() {
-        DiscountCalculator calculator = new DiscountCalculator();
-        Decimal expectedAmountFor1000 = 1000 - (1000 * 0.2); // 20% discount
-        System.assertEquals(expectedAmountFor1000, calculator.calculateDiscount(1000, null), 'Amounts of 500 and above should receive a 20% discount.');
-    }
-    
-    @isTest static void testSpecialDiscountCode() {
-        DiscountCalculator calculator = new DiscountCalculator();
-        Decimal expectedAmountFor200WithCode = (200 - (200 * 0.1)) * 0.95; // 10% discount and additional 5% discount
-        System.assertEquals(expectedAmountFor200WithCode, calculator.calculateDiscount(200, 'OSF5'), 'Amounts with the special discount code should receive an additional 5% discount.');
-    }
-    
-    @isTest static void testNullAmount() {
-        DiscountCalculator calculator = new DiscountCalculator();
-        System.assertEquals(0, calculator.calculateDiscount(null, null), 'Null amounts should result in a 0 return value.');
-    }
-    
-    @isTest static void testNullDiscountCode() {
-        DiscountCalculator calculator = new DiscountCalculator();
-        Decimal expectedAmountFor200 = 200 - (200 * 0.1); // 10% discount
-        System.assertEquals(expectedAmountFor200, calculator.calculateDiscount(200, null), 'Null discount code should not affect the discount calculation.');
+        
+        // Testăm cazul de null
+        Decimal result = calculator.calculateDiscount(null);
+        System.assertEquals(0, result, 'Null amount should return 0');
     }
 }

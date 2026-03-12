@@ -5,8 +5,8 @@
       "default": true
     }
   ],
-  "name": "Challange4",
+  "name": "osf-sfdc-academy-challenges",
   "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "66.0"
+  "sourceApiVersion": "59.0"
 }

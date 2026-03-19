@@ -42,29 +42,28 @@ public class AccountAddressVerificationTest {
     @isTest
     static void testInvalidPostalCode() {
         Account acc = createTestAccount('ABC123');
+        Test.startTest();
         try {
-            Test.startTest();
             insert acc;
             System.assert(false, 'Expected an exception due to invalid postal code.');
-            Test.stopTest();
         } catch (DmlException e) {
             // Verify that the error message is as expected
             System.assert(e.getMessage().contains('The Billing Postal Code is not in the correct format.'));
         }
+        Test.stopTest();
     }
 
     @isTest
     static void testNullPostalCode() {
         Account acc = createTestAccount(null);
+        Test.startTest();
         try {
-            Test.startTest();
             insert acc;
             System.assert(false, 'Expected an exception due to null postal code.');
-            Test.stopTest();
         } catch (DmlException e) {
             // Verify that the error message is as expected
             System.assert(e.getMessage().contains('The Billing Postal Code is not in the correct format.'));
         }
-        
+        Test.stopTest();
     }
 }

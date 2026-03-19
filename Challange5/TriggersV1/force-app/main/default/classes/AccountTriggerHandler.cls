@@ -1,20 +1,26 @@
 public class AccountTriggerHandler {
     
     public static void validatePostalCodes(List<Account> accountList) {
-        // Regex for Brazil: 5 digits, optional hyphen, 3 digits
+        // Regex clar pentru Brazilia si Romania
         String brazilRegex = '^[0-9]{5}-?[0-9]{3}$';
-        // Regex for Romania: 6 digits
         String romaniaRegex = '^[0-9]{6}$';
+        // Mesajul trebuie sa fie IDENTIC cu cel din test
+        String errorMessage = 'The Billing Postal Code is not in the correct format.';
 
         for (Account acc : accountList) {
-            if (acc.BillingPostalCode != null) {
-                String postalCode = acc.BillingPostalCode;
-                
+            String postalCode = acc.BillingPostalCode;
+            
+            // 1. Daca e null, trebuie sa dea eroare (pentru testNullPostalCode)
+            if (postalCode == null) {
+                acc.BillingPostalCode.addError(errorMessage);
+            } 
+            else {
                 boolean isValidBrazil = Pattern.matches(brazilRegex, postalCode);
                 boolean isValidRomania = Pattern.matches(romaniaRegex, postalCode);
                 
+                // 2. Daca nu e valid, trebuie sa dea eroare (pentru testInvalidPostalCode)
                 if (!isValidBrazil && !isValidRomania) {
-                    acc.BillingPostalCode.addError('The Billing Postal Code must be in a valid Brazilian (00000-000) or Romanian (000000) format.');
+                    acc.BillingPostalCode.addError(errorMessage);
                 }
             }
         }

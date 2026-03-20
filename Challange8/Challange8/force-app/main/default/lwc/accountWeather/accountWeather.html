@@ -11,7 +11,7 @@
                 </div>
             </template>
 
-            <template lwc:else if:true={error}>
+            <template lwc:elseif={error}>
                 <p class="slds-text-color_error">{error}</p>
             </template>
         </div>

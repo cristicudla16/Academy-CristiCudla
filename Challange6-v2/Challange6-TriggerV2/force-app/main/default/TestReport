@@ -1,0 +1,14 @@
+Apex Test Results
+Run completed: 03/20/2026, 13:59:47
+
+Summary
+Total Tests: 5
+✅ Passed: 5
+❌ Failed: 0
+⏱️ Duration: 989ms
+✅ Passed Tests (5)
+OpportunityDiscountAssignerTest.testNegotiationReviewDiscount (701ms)
+OpportunityDiscountAssignerTest.testNoDiscount (154ms)
+OpportunityDiscountAssignerTest.testBulkDiscounts (47ms)
+OpportunityDiscountAssignerTest.testQualificationDiscount (46ms)
+OpportunityDiscountAssignerTest.testProspectingDiscount (41ms)

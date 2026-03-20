@@ -1,0 +1,141 @@
+{
+  "summary": {
+    "outcome": "Failed",
+    "testsRan": 5,
+    "passing": 3,
+    "failing": 2,
+    "skipped": 0,
+    "passRate": "60%",
+    "failRate": "40%",
+    "skipRate": "0%",
+    "testStartTime": "2026-03-19T14:44:45.000Z",
+    "testSetupTimeInMs": 0,
+    "testExecutionTimeInMs": 810,
+    "testTotalTimeInMs": 810,
+    "commandTimeInMs": 304,
+    "hostname": "https://orgfarm-234af5408c-dev-ed.develop.my.salesforce.com",
+    "orgId": "00Dfj00000JdS1VEAV",
+    "username": "cristicudla16.f48ba967627b@agentforce.com",
+    "testRunId": "707fj00000PuZdH",
+    "userId": "005fj00000CYyinAAD"
+  },
+  "tests": [
+    {
+      "id": "07Mfj000002r3mbEAA",
+      "queueItemId": "709fj000009sBBRAA2",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "707fj00000PuZdHAAV",
+      "methodName": "testValidBrazilianPostalCodeWithoutHyphen",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01pfj00000AB93pAAD",
+        "name": "AccountAddressVerificationTest",
+        "namespacePrefix": null,
+        "fullName": "AccountAddressVerificationTest"
+      },
+      "runTime": 533,
+      "testTimestamp": "2026-03-19T14:44:47.000+0000",
+      "fullName": "AccountAddressVerificationTest.testValidBrazilianPostalCodeWithoutHyphen",
+      "category": "Apex"
+    },
+    {
+      "id": "07Mfj000002r3mcEAA",
+      "queueItemId": "709fj000009sBBRAA2",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "707fj00000PuZdHAAV",
+      "methodName": "testValidRomanianPostalCode",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01pfj00000AB93pAAD",
+        "name": "AccountAddressVerificationTest",
+        "namespacePrefix": null,
+        "fullName": "AccountAddressVerificationTest"
+      },
+      "runTime": 67,
+      "testTimestamp": "2026-03-19T14:44:48.000+0000",
+      "fullName": "AccountAddressVerificationTest.testValidRomanianPostalCode",
+      "category": "Apex"
+    },
+    {
+      "id": "07Mfj000002r3mdEAA",
+      "queueItemId": "709fj000009sBBRAA2",
+      "stackTrace": "Class.AccountAddressVerificationTest.testNullPostalCode: line 62, column 1",
+      "message": "System.AssertException: Assertion Failed: Expected an exception due to null postal code.",
+      "asyncApexJobId": "707fj00000PuZdHAAV",
+      "methodName": "testNullPostalCode",
+      "outcome": "Fail",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01pfj00000AB93pAAD",
+        "name": "AccountAddressVerificationTest",
+        "namespacePrefix": null,
+        "fullName": "AccountAddressVerificationTest"
+      },
+      "runTime": 65,
+      "testTimestamp": "2026-03-19T14:44:48.000+0000",
+      "fullName": "AccountAddressVerificationTest.testNullPostalCode",
+      "diagnostic": {
+        "exceptionMessage": "System.AssertException: Assertion Failed: Expected an exception due to null postal code.",
+        "exceptionStackTrace": "Class.AccountAddressVerificationTest.testNullPostalCode: line 62, column 1",
+        "className": "AccountAddressVerificationTest",
+        "compileProblem": "",
+        "lineNumber": 62,
+        "columnNumber": 1
+      },
+      "category": "Apex"
+    },
+    {
+      "id": "07Mfj000002r3meEAA",
+      "queueItemId": "709fj000009sBBRAA2",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "707fj00000PuZdHAAV",
+      "methodName": "testValidBrazilianPostalCodeWithHyphen",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01pfj00000AB93pAAD",
+        "name": "AccountAddressVerificationTest",
+        "namespacePrefix": null,
+        "fullName": "AccountAddressVerificationTest"
+      },
+      "runTime": 74,
+      "testTimestamp": "2026-03-19T14:44:48.000+0000",
+      "fullName": "AccountAddressVerificationTest.testValidBrazilianPostalCodeWithHyphen",
+      "category": "Apex"
+    },
+    {
+      "id": "07Mfj000002r3mfEAA",
+      "queueItemId": "709fj000009sBBRAA2",
+      "stackTrace": "Class.AccountAddressVerificationTest.testInvalidPostalCode: line 48, column 1",
+      "message": "System.AssertException: Assertion Failed: Expected an exception due to invalid postal code.",
+      "asyncApexJobId": "707fj00000PuZdHAAV",
+      "methodName": "testInvalidPostalCode",
+      "outcome": "Fail",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01pfj00000AB93pAAD",
+        "name": "AccountAddressVerificationTest",
+        "namespacePrefix": null,
+        "fullName": "AccountAddressVerificationTest"
+      },
+      "runTime": 71,
+      "testTimestamp": "2026-03-19T14:44:48.000+0000",
+      "fullName": "AccountAddressVerificationTest.testInvalidPostalCode",
+      "diagnostic": {
+        "exceptionMessage": "System.AssertException: Assertion Failed: Expected an exception due to invalid postal code.",
+        "exceptionStackTrace": "Class.AccountAddressVerificationTest.testInvalidPostalCode: line 48, column 1",
+        "className": "AccountAddressVerificationTest",
+        "compileProblem": "",
+        "lineNumber": 48,
+        "columnNumber": 1
+      },
+      "category": "Apex"
+    }
+  ],
+  "setup": []
+}

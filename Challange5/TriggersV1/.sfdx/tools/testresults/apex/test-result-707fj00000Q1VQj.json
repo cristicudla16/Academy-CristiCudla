@@ -1,0 +1,125 @@
+{
+  "summary": {
+    "outcome": "Passed",
+    "testsRan": 5,
+    "passing": 5,
+    "failing": 0,
+    "skipped": 0,
+    "passRate": "100%",
+    "failRate": "0%",
+    "skipRate": "0%",
+    "testStartTime": "2026-03-20T11:12:40.000Z",
+    "testSetupTimeInMs": 0,
+    "testExecutionTimeInMs": 820,
+    "testTotalTimeInMs": 820,
+    "commandTimeInMs": 313,
+    "hostname": "https://orgfarm-234af5408c-dev-ed.develop.my.salesforce.com",
+    "orgId": "00Dfj00000JdS1VEAV",
+    "username": "cristicudla16.f48ba967627b@agentforce.com",
+    "testRunId": "707fj00000Q1VQj",
+    "userId": "005fj00000CYyinAAD"
+  },
+  "tests": [
+    {
+      "id": "07Mfj000002sWPxEAM",
+      "queueItemId": "709fj000009uDjlAAE",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "707fj00000Q1VQjAAN",
+      "methodName": "testValidBrazilianPostalCodeWithoutHyphen",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01pfj00000AB93pAAD",
+        "name": "AccountAddressVerificationTest",
+        "namespacePrefix": null,
+        "fullName": "AccountAddressVerificationTest"
+      },
+      "runTime": 612,
+      "testTimestamp": "2026-03-20T11:12:40.000+0000",
+      "fullName": "AccountAddressVerificationTest.testValidBrazilianPostalCodeWithoutHyphen",
+      "category": "Apex"
+    },
+    {
+      "id": "07Mfj000002sWPyEAM",
+      "queueItemId": "709fj000009uDjlAAE",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "707fj00000Q1VQjAAN",
+      "methodName": "testValidRomanianPostalCode",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01pfj00000AB93pAAD",
+        "name": "AccountAddressVerificationTest",
+        "namespacePrefix": null,
+        "fullName": "AccountAddressVerificationTest"
+      },
+      "runTime": 78,
+      "testTimestamp": "2026-03-20T11:12:41.000+0000",
+      "fullName": "AccountAddressVerificationTest.testValidRomanianPostalCode",
+      "category": "Apex"
+    },
+    {
+      "id": "07Mfj000002sWPzEAM",
+      "queueItemId": "709fj000009uDjlAAE",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "707fj00000Q1VQjAAN",
+      "methodName": "testNullPostalCode",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01pfj00000AB93pAAD",
+        "name": "AccountAddressVerificationTest",
+        "namespacePrefix": null,
+        "fullName": "AccountAddressVerificationTest"
+      },
+      "runTime": 27,
+      "testTimestamp": "2026-03-20T11:12:41.000+0000",
+      "fullName": "AccountAddressVerificationTest.testNullPostalCode",
+      "category": "Apex"
+    },
+    {
+      "id": "07Mfj000002sWQ0EAM",
+      "queueItemId": "709fj000009uDjlAAE",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "707fj00000Q1VQjAAN",
+      "methodName": "testValidBrazilianPostalCodeWithHyphen",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01pfj00000AB93pAAD",
+        "name": "AccountAddressVerificationTest",
+        "namespacePrefix": null,
+        "fullName": "AccountAddressVerificationTest"
+      },
+      "runTime": 78,
+      "testTimestamp": "2026-03-20T11:12:41.000+0000",
+      "fullName": "AccountAddressVerificationTest.testValidBrazilianPostalCodeWithHyphen",
+      "category": "Apex"
+    },
+    {
+      "id": "07Mfj000002sWQ1EAM",
+      "queueItemId": "709fj000009uDjlAAE",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "707fj00000Q1VQjAAN",
+      "methodName": "testInvalidPostalCode",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01pfj00000AB93pAAD",
+        "name": "AccountAddressVerificationTest",
+        "namespacePrefix": null,
+        "fullName": "AccountAddressVerificationTest"
+      },
+      "runTime": 25,
+      "testTimestamp": "2026-03-20T11:12:41.000+0000",
+      "fullName": "AccountAddressVerificationTest.testInvalidPostalCode",
+      "category": "Apex"
+    }
+  ],
+  "setup": []
+}
